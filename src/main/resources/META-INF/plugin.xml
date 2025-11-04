@@ -1,15 +1,13 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.kl.gutterbreakpointsrustplugin</id>
-    <name>gutter-breakpoints-rust-plugin</name>
+    <name>Gutter-Breakpoints-Rust</name>
     <vendor>kl</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.kl.gutterbreakpointsrustplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.kl.gutterbreakpointsrustplugin.startup.MyProjectActivity" />
+        <postStartupActivity implementation="com.github.kl.gutterbreakpointsrustplugin.startup.ToggleRustBreakpointProjectActivity" />
     </extensions>
+
 </idea-plugin>
