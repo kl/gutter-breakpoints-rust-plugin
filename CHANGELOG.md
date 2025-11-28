@@ -1,6 +1,11 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# gutter-breakpoints-rust-plugin Changelog
+# Rust Gutter Breakpoints Changelog
 
-## [0.0.1]
+## [Unreleased]
+
+## [0.1.0]
+
+### Added
+
 - Initial release
