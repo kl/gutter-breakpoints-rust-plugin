@@ -1,13 +1,13 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.kl.gutterbreakpointsrustplugin</id>
-    <name>Gutter-Breakpoints-Rust</name>
+    <id>net.klindstrom.gutterbreakpointsrustplugin</id>
+    <name>Rust Gutter Breakpoints</name>
     <vendor>kl</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <postStartupActivity implementation="com.github.kl.gutterbreakpointsrustplugin.startup.ToggleRustBreakpointProjectActivity" />
+        <postStartupActivity implementation="net.klindstrom.gutterbreakpointsrustplugin.ToggleRustBreakpointProjectActivity" />
     </extensions>
 
 </idea-plugin>

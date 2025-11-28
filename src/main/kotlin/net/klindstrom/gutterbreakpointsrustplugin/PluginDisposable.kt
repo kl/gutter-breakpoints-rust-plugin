@@ -1,23 +1,20 @@
-package com.github.kl.gutterbreakpointsrustplugin.services
+package net.klindstrom.gutterbreakpointsrustplugin
 
 import com.intellij.openapi.Disposable
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.project.Project
 
-
-/**
- * The service is intended to be used instead of a project/application as a parent disposable.
- */
+/** The service is intended to be used instead of a project/application as a parent disposable. */
 @Service(Service.Level.APP, Service.Level.PROJECT)
 class PluginDisposable : Disposable {
-    override fun dispose() {
-    }
+    override fun dispose() {}
 
     companion object {
         val instance: Disposable
-            get() = ApplicationManager.getApplication()
-                .getService<PluginDisposable>(PluginDisposable::class.java)
+            get() =
+                ApplicationManager.getApplication()
+                    .getService<PluginDisposable>(PluginDisposable::class.java)
 
         fun getInstance(project: Project): Disposable {
             return project.getService(PluginDisposable::class.java)
