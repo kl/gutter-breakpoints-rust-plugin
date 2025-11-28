@@ -2,9 +2,11 @@
 <idea-plugin>
     <id>net.klindstrom.gutterbreakpointsrustplugin</id>
     <name>Rust Gutter Breakpoints</name>
-    <vendor>kl</vendor>
+    <vendor>klindstrom</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.xdebugger</depends>
+    <depends>com.intellij.modules.androidstudio</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity implementation="net.klindstrom.gutterbreakpointsrustplugin.ToggleRustBreakpointProjectActivity" />
