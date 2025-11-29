@@ -5,7 +5,7 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/29173-rust-gutter-breakpoints.svg)](https://plugins.jetbrains.com/plugin/29173-rust-gutter-breakpoints)
 
 <!-- Plugin description -->
-Enables setting Rust breakpoints in Android Studio by hooking in the existing C/C++ breakpoint support.
+Enables setting Rust breakpoints in Android Studio by hooking in to the existing C/C++ breakpoint support.
 
 With this plugin you can toggle breakpoints in Rust code by clicking the gutter or by using your toggle breakpoint 
 keyboard shortcut.
