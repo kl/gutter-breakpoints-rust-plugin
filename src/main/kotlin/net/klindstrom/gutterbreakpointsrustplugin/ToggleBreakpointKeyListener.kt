@@ -9,7 +9,7 @@ import java.awt.KeyEventDispatcher
 import java.awt.event.KeyEvent
 import javax.swing.KeyStroke
 
-class ToggleBreakpointKeyWatcher(val project: Project): KeyEventDispatcher {
+class ToggleBreakpointKeyWatcher(val project: Project) : KeyEventDispatcher {
     private val toggleBreakpointKeyStrokes: MutableSet<KeyStroke> = HashSet()
 
     init {

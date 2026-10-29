@@ -2,7 +2,11 @@
 
 # Rust Gutter Breakpoints Changelog
 
-## [Unreleased]
+## [0.2.0]
+
+### Added
+
+- Support syncing breakpoints from RustRover to Android Studio
 
 ## [0.1.0]
 

@@ -14,7 +14,7 @@ class PluginDisposable : Disposable {
         val instance: Disposable
             get() =
                 ApplicationManager.getApplication()
-                    .getService<PluginDisposable>(PluginDisposable::class.java)
+                    .getService(PluginDisposable::class.java)
 
         fun getInstance(project: Project): Disposable {
             return project.getService(PluginDisposable::class.java)

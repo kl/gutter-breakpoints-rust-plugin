@@ -4,7 +4,7 @@ import com.intellij.openapi.editor.event.EditorMouseEvent
 import com.intellij.openapi.editor.event.EditorMouseEventArea
 import com.intellij.openapi.editor.event.EditorMouseListener
 
-class ToggleBreakpointClickListener: EditorMouseListener {
+class ToggleBreakpointClickListener : EditorMouseListener {
 
     override fun mouseClicked(e: EditorMouseEvent) {
         if (

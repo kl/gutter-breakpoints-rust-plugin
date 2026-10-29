@@ -6,7 +6,6 @@
 
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.xdebugger</depends>
-    <depends>com.intellij.modules.androidstudio</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity implementation="net.klindstrom.gutterbreakpointsrustplugin.ToggleRustBreakpointProjectActivity" />
